@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Laura Rubio</title>
+    <link rel="stylesheet" href="css/portafolio.css">
+</head>
+<body>
+
+<!-- Página de Inicio -->
+<header>
+    <div id="container__header"> <!-- Sección de Inicio -->
+        <nav>
+            <ul>
+                <li><a href="#container__header">Inicio</a></li>
+                <li><a href="#about__me">Sobre Mí</a></li> <!--Sección 1-->
+                <li><a href="#skills">Habilidades</a></li> <!--Sección 2-->
+                <li><a href="#projects">Proyectos</a></li> <!--Sección 3-->
+                <li><a href="#contact">Contacto</a></li> <!--Sección 4-->
+            </ul>
+        </nav>
+        <div class="content__profile">  <!-- Contenido principal -->
+            <h3>Laura Catalina Rubio Villa</h3>
+            <h1>Diseñadora Web</h1>
+        </div>
+    </div>
+</header>
+
+<!--Sección 1-->
+<section>
+    <div id="about__me">
+        <h1>Sobre Mí</h1>
+        <p>Actualmente soy aprendiz del SENA CDITI en el tecnólogo de análisis y desarrollo de Software. Graduada de la institución educativa María Auxiliadora de Dosquebradas con énfasis comercial, en la cual pude adquirir habilidades en el mercado laboral, a la hora de relacionarme con los clientes y captar su atención, liderar áreas de trabajo, el manejo de archivos y sistemas contables. Considero que aprendo con facilidad y me adapto adecuadamente a un nuevo entorno, me destaco por ser una persona pasiva que le gusta generar buenos ambientes de trabajo, ver el lado positivo de las cosas y buscar solución a los problemas de manera crítica y beneficiosa. Presento interés por el aprendizaje continuo y la actualización constante, al igual por la buena presentación, tanto personal como de los proyectos realizados.</p>
+
+        <div class="contact__info"> <!--Información de contacto-->
+            <h2>Contácto</h2>
+            <h3>laucatalina23@gmail.com</h3>
+
+            <div class="contact__social"> <!--Iconos redes sociales-->
+            <a href="#">
+                <img src="img/linkedin.png" alt="LinkedIn" class="social_icon"> <!--Perfil de LinkedIn-->
+            </a>
+            
+            <a href="#">
+                <img src="img/github.png" alt="GitHub" class="social_icon"> <!--Perfil de GitHub-->
+            </a>
+
+            <a href="#">
+                <img src="img/facebook.png" alt="Facebook" class="social_icon"> <!--Perfil de FaceBook-->
+            </a>
+
+            <a href="#">
+                <img src="img/instagram.png" alt="Instagram" class="social_icon"> <!--Perfil de Instagram-->
+            </a>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<!--Sección 2-->
+<section>
+    <div id="skills">
+        <div class="container">
+            <h1>Habilidades</h1>
+            <div class="skills__list"> <!--Contenedor de habilidades-->
+
+                <div class="skill"> <!--Habilidad 1-->
+                    <h2>Java</h2>
+                    <p>Conocimiento intermedio, adecuado para tareas básicas y proyectos de complejidad moderada.</p>
+                    <div class="progress__bar">
+                        <div class="progress_bar bar_java">50%</div> <!--Barra estadística Java-->
+                    </div>
+                </div>
+
+                <div class="skill"> <!--Habilidad 2-->
+                    <h2>JavaScript</h2>
+                    <p>Sólida experiencia en el desarrollo de interfaces web dinámicas para aplicaciones frontend.</p>
+                    <div class="progress__bar">
+                        <div class="progress_bar bar_js">70%</div> <!--Barra estadística JavaScript-->
+                    </div>
+                </div>
+
+                <div class="skill"> <!--Habilidad 3-->
+                    <h2>Python</h2>
+                    <p>Capacidad de abordar proyectos complejos y multifacéticos en diversas aplicaciones.</p>
+                    <div class="progress__bar">
+                        <div class="progress_bar bar_py">80%</div> <!--Barra estadística Python-->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Sección 3-->
+<section>
+    <div id="projects">
+        <div class="container">
+            <h1>Proyectos</h1>
+            <div class="projects__list"> <!--Contenedor de proyectos-->
+
+                <div class="project">
+                    <img src="img/pexels-gilmerdiaz-17543777.jpg" alt="App financiera"> <!--Primer imagen de fondo proyecto 1-->
+                    <div class="layer"> <!--Insertar la información por arriba de la imagen-->
+                        <h3>App. Tareas pendientes</h3>
+                        <p>Aplicación web simple que permite a los usuarios gestionar sus tareas diarias.</p><br><p>Tecnologías usadas:</p><br><p>HTML5, CSS3, JavaScript, Node.js, Express, MongoDB.</p><br><p>Desafíos:</p><br><p>Implementar la persistencia de datos para que las tareas se guarden y carguen correctamente entre sesiones.</p><br><p>Soluciones:</p><br><p>- Se utilizó MongoDB para almacenar las tareas de manera persistente, y Express para manejar las rutas del servidor y las operaciones CRUD.</p><br><p>- La interfaz fue diseñada con HTML y CSS, utilizando JavaScript para actualizar dinámicamente la lista de tareas sin recargar la página.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="img/pexels-anna-nekrashevich-6802052.jpg" alt="App tareas"> <!--Segunda imagen de fondo proyecto 2-->
+                    <div class="layer"> <!--Insertar la información por arriba de la imagen-->
+                        <h3>App. Calculadora de presupuestos</h3>
+                        <p>Aplicación que permite a los usuarios gestionar sus ingresos y gastos mensuales, generando un balance y gráficos de su situación financiera.</p><br><p>Tecnologías usadas:</p><br><p>React.js, CSS3, Node.js, Express, SQLite.</p><br><p>Desafíos:</p><br><p>Crear un sistema de categorización para los ingresos y gastos que sea flexible y fácil de usar.</p><br><p>Soluciones:</p><br><p>- Se utilizó React.js para desarrollar una interfaz modular y reactiva, permitiendo a los usuarios interactuar con los datos en tiempo real.</p><br><p> - Para los gráficos, se integró la librería Chart.js, lo que facilitó la creación de representaciones visuales atractivas de los datos financieros.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="img/pexels-cottonbro-3584970.jpg" alt="Portafolio Web"> <!--Tercera imagen de fondo proyecto 3-->
+                    <div class="layer"> <!--Insertar la información por arriba de la imagen-->
+                        <h3>Sitio web de portafolio personal</h3>
+                        <p>Sitio web que presenta el portafolio de un desarrollador, incluyendo su biografía, habilidades, proyectos destacados, y un formulario de contacto.</p><br><p>Tecnologías usadas:</p><br><p>HTML5, CSS3, JavaScript.</p><br><p>Desafíos:</p><br><p>Diseñar un sitio web responsivo e implementar un formulario de contacto funcional que valide los datos del usuario.</p><br><p>Soluciones:</p><br><p>- Se utilizó CSS Flexbox y Grid para crear un diseño responsivo que se adapta a diferentes tamaños de pantalla.</p><br><p>- El formulario de contacto fue validado usando JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Sección 4-->
+<section>
+    <div id="contact">
+        <div class="container">
+            <div class="row"> <!--Crear dos columnas-->
+                <div class="contact__left">
+                    <h1>Contácto</h1>
+                    <div class="icon_text">
+                        <img src="img/sobre.png" alt="Icono de correo" class="icon"> <!--Icono de correo electrónico-->
+                        <p class="text">laucatalina23@gmail.com</p>
+                    </div>
+
+                    <div class="icon_text">
+                        <img src="img/llamada-telefonica.png" alt="Icono de teléfono" class="icon"> <!--Icono de número de teléfono-->
+                        <p class="text">(300) 5690140</p>
+                    </div>
+
+                </div>
+                <div class="contact__right"> <!--Formulario para el envio de mensajes de los usuarios-->
+                    <form>
+                        <input type="text" name="Name" placeholder="Nombre" required>
+                        <input type="email" name="Email" placeholder="Correo electrónico" required>
+                        <textarea name="Mensaje" rows="6" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="btn_send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="footer">
+        <p>&copy; 2024 - Laura Catalina Rubio Villa. Todos los derechos reservados.</p>
+        <a href="#container__header">Inicio</a>
+        <a href="#about__me">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contácto</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </div>
+</footer>
+</body>
+</html>

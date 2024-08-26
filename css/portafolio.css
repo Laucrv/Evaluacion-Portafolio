@@ -1,0 +1,377 @@
+/* Colores a usar */
+:root{
+    --black: #000;
+    --white: #fff;
+    --brown--1: #623307;
+    --brown--2: #6d3c11;
+    --brown--3: #78451a;
+    --brown--4: #834f23;
+    --brown--5: #8e582c;
+    --brown--6: #a06c3f;
+    --brown--7: #b88b5c;
+    --brown--8: #834f23;
+    --brown--9: #e8cb9a;
+    --brown--10: #ffedba;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--brown--7);
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/Foto\ de\ perfil\ portafolio.png'); /*Imagen para el fondo de la sección "Inicio"*/
+    background-position: center;
+    background-size: cover;
+}
+
+#container__header{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: var(--black);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--brown--6);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.content__profile{
+    margin-top: 15%;
+    font-size: 2.5rem; 
+}
+
+.content__profile h1{
+    font-weight: bolder;
+    color: var(--brown--1);
+}
+
+.content__profile h3{
+    color: var(--brown--8);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Sección - Sobre Mí */
+
+#about__me{
+    padding: 80px 0;
+    color: var(--white);
+}
+
+#about__me h1{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--brown--5);
+}
+
+#about__me p{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+}
+
+.contact__info{
+    margin-left: 12rem;
+    color: var(--brown--5);
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.contact__info h3{
+    margin-top: 0.5rem;
+    color: var(--brown--10);
+}
+
+.contact__social{
+    justify-content: space-between;
+    display: inline-block;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social_icon{
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--white);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); /*Generador de filtros para cambiar el color de los iconos */
+}
+
+/* Sección - Habilidades */
+
+#skills{
+    padding: 30px 50px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--brown--5);
+}
+
+.skills__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skill{
+    background: var(--brown--9);
+    padding: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    height: 15rem;
+}
+
+.skills__list h2{
+    color: var(--brown--2);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skills__list p{
+    margin-top: 8px;
+}
+
+.progress__bar{
+    background-color: var(--white);
+    border-radius: 2rem;
+    margin-top: 30px;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.progress_bar{
+    background-color: var(--brown--4);
+    height: 100%;
+    border-radius: 2rem;
+    line-height: 30px;
+    color: var(--white);
+    text-align: center;
+    font-weight: bolder;
+    width: 0;
+    transition: width 1s ease;
+}
+
+.progress__bar:hover .bar_java{
+    width: 50%;
+}
+
+.progress__bar:hover .bar_js{
+    width: 70%;
+}
+
+.progress__bar:hover .bar_py{
+    width: 80%;
+}
+
+/* Sección - Proyectos */
+
+#projects{
+    padding: 80px 50px;
+}
+
+.projects__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project{
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 2rem;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--brown--4));
+    border-radius: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 1rem;
+    transition: height 1s;
+}
+
+.layer h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--brown--9);
+}
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+/* Sección - Contácto */
+
+#contact{
+    padding: 80px 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__left{
+    flex-basis: 35%;
+    padding: 10px 50px;
+}
+
+.contact__right{
+    flex-basis: 60%;
+}
+
+.contact__left h1{
+    margin-bottom: 20px;
+}
+
+.contact__left .icon_text{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact__left p{
+    margin-top: 30px;
+}
+
+.contact__left .icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 50px;
+    margin-top: 1.6rem;
+    color: var(--white);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(56%) saturate(331%) hue-rotate(350deg) brightness(89%) contrast(87%); /*Generador de filtros para cambiar el color de los iconos */
+}
+
+.contact__left .text{
+    font-size: 1rem;
+    color: var(--white);
+    margin-left: 10px;
+}
+
+.btn_send{
+    display: inline-block;
+    background: var(--brown--8);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    width: 10rem;
+}
+
+.btn_send:hover{
+    background-color: var(--brown--7);
+}
+
+.contact__right form{
+    width: 80%;    
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--brown--9);
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--black);
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(24, 24, 24);
+    color: var(--white);
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 5rem;
+    width: 100%;
+    text-decoration: none;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+/* Responsive */
